@@ -18,24 +18,27 @@ body {
   text-align: center;
   padding: 80px 20px;
   max-width: 900px;
-  margin: auto;
+  :root {
+  --color-principal: #2563eb;
+  --color-secundario: #1e40af;
+  --color-fondo: #f5f5f5;
+  --color-texto: #333;
+  --color-blanco: white;
 }
 
-h1 {
-  color: var(--color-principal);
-  font-size: 48px;
-  margin-bottom: 20px;
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+  color: var(--color-texto);
 }
 
-h2 {
-  color: var(--color-secundario);
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 900px;
+  }
 
 .btn {
   display: inline-block;
@@ -58,4 +61,55 @@ p {
   padding: 30px;
   max-width: 900px;
   border-radius: 15px;
+}
+
+/* PRODUCTOS */
+.productos {
+  padding: 50px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 15px;
+}
+
+.precio {
+  color: var(--color-principal);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-card {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: var(--color-principal);
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-card:hover {
+  background-color: var(--color-secundario);
 }
