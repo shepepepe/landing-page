@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
 
-  <!-- Vinculación del CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +16,8 @@
       Calidad, diseño y tecnología en un solo lugar.
     </p>
 
-    <a href="#" class="btn">Comprar Ahora</a>
+    <!-- Botón que lleva a la sección productos -->
+    <a href="#productos" class="btn">Comprar Ahora</a>
   </header>
 
   <section class="info">
@@ -28,12 +28,33 @@
     </p>
   </section>
 
-  <section class="info">
-    <h2>Beneficios</h2>
+  <!-- SECCIÓN PRODUCTOS -->
+  <section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
 
-    <p>
-      Garantía asegurada, soporte 24/7 y las mejores ofertas del mercado.
-    </p>
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_892220-MLA74651623377_022024-F.webp" alt="iPhone 15">
+        <h3>iPhone 15</h3>
+        <p class="precio">$1.200.000</p>
+        <a href="https://www.mercadolibre.com.ar" target="_blank" class="btn-card">Ver en Mercado Libre</a>
+      </div>
+
+      <div class="card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_936071-MLA72849541861_112023-F.webp" alt="PlayStation 5">
+        <h3>PlayStation 5</h3>
+        <p class="precio">$950.000</p>
+        <a href="https://www.mercadolibre.com.ar" target="_blank" class="btn-card">Ver en Mercado Libre</a>
+      </div>
+
+      <div class="card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_814182-MLA74221451020_012024-F.webp" alt="Notebook Gamer">
+        <h3>Notebook Gamer</h3>
+        <p class="precio">$1.850.000</p>
+        <a href="https://www.mercadolibre.com.ar" target="_blank" class="btn-card">Ver en Mercado Libre</a>
+      </div>
+       </div>
   </section>
 
 </body>
